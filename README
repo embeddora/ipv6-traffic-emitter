@@ -1,0 +1,22 @@
+TODO:
+ 1. After first successful communication session (on client side)
+    can not be opened again on the same socket. (In other words when server
+    is re-launched a newly started client can't access it.)
+
+ 2. Test on real RTSP/RTP ports number. Test on reasl multicast addresses.
+
+ 3. Provide references to results of "configure" within "Makefile.in".
+
+ 4. Parse the commandline parameters with getopt, otherwise remove the last
+    one from "configure.in".
+
+HOW TO USE:
+
+ 1. Start "traffic_emitter" on first IPv6-network PC (this one will be
+    SERVER PC).
+
+ 2. Start "traffic_receiver IPV6_ADDR*" on second IPv6-network PC (this one
+    will be CLIENT PC), input characters as long as being promted, and observe
+    the console output - reponce characters generater and sent frmo SERVER PC.
+
+(*) - IPv6 address of PC with "traffic_emitter" started on.
